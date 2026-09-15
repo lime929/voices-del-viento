@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "date": "October 3. 2024",
+        "location": "Milwaukee, WI",
+        "venue": "Shank Hall",
+        "Description": "One of the most unexpected moments in our career was during a spontanious acoustic concert in Milkwaukee. We had just finished an amazing and high energy show, but the night still felt young. The crowd wasn’t ready for the night to end, and neither were we. We got our guitars and started playing a few of our songs acoustic, with just us and the audience. Fans gathered around the stage to listen, quiet lyrics rang through the air as the crowd sang. This is why we love small venues, it allows for an intimate and personal conversation between us and the crowd, giving the music more weight in that moment. The way the crowd listened and gathered made that night one of the most memorable of our entire career.",
+        "status": "past"
+    },
+    {
+        "id": 2,
+        "date": "March 22, 2024",
+        "location": "Mexico City, Mexico",
+        "venue": "Palacio de Bellas Artes",
+        "Description": "There are some shows where the energy in the room is on another level, and our sold-out show in Mexico City was one of those nights. We had been playing in smaller venues around the country, but this night was different—it felt like the entire city had come alive to support us in this small venue. The crowd was singing almost every word, their voices supporting with ours as we played. We played feeding off the energy of the crowd and the energy blasted us through the set. This night was a reminder of why we love music and touring-to create moments like these with people.",
+        "status": "past"
+    },
+    {
+        "id": 3,
+        "date": "July 14, 2023",
+        "location": "Manhattan, NY",
+        "venue": "The Red Lion",
+        "Description": "There’s something truly magical about playing in an intimate venue where the connection with the crowd is so personal. Our show in New York, at a small but packed venue, was a night that will always stand out. The atmosphere was cozy, and we could see the faces of the fans right in front of us, every smile, every nod, every shout of excitement. We played a lot of our more intimate tracks that night, and hearing the audience’s raw emotion as they sang along made it feel like we were sharing something incredibly special. There was a vulnerability in that space, and it felt like we were all just one group of people, connected by the music.",
+        "status": "past"
+    },
+    {
+        "id": 4,
+        "date": "July 12, 2023",
+        "location": "Brooklyn, NY",
+        "venue": "The Owl Music Parlor",
+        "Description": "This was one of our first shows and a milestone in our journey as a band. We were nervous, excited, and full of energy, but what made it special was seeing our fans in the crowd. That night, the small venue was packed, and the moment we stepped on stage we knew it would be a good show. It wasn’t just a show; it was the beginning of something we’d dreamed about for years. That night, we knew we had found our calling, and that sense of belonging has fueled us ever since.",
+        "status": "past"
+    },
+    {
+        "id": 5,
+        "date": "August 8, 2023",
+        "location": "San Francisco, CA",
+        "venue": "Golden Gate Park",
+        "Description": " Our performance at a California festival will always be etched in our minds as one of the most exhilarating experiences we’ve had yet. Thousands of music lovers were packed into the festival area, and as we stepped onto our small stage we felt like all of our hard work was worth it. It was like nothing we’d ever felt before. The sheer scale of the event, the sea of faces, and the overwhelming support that was right in front of us. We had the chance to play alongside some amazing artists, ones we've looked up to since teenagers, like a dream come true. Playing the festival reminded us that we’re all part of something much bigger than just a band.",
+        "status": "past"
+    },
+    {
+        "id": 6,
+        "date": "November 14, 2026",
+        "location": "Seattle, WA",
+        "venue": "Neptune Theatre",
+        "specialGuest": "with special guest Rachel Chinouriri",
+        "tickets": {
+            "label": "Tickets",
+            "href": "https://www.ticketmaster.com/"
+        },
+        "status": "upcoming"
+    },
+    {
+        "id": 7,
+        "date": "December 5, 2026",
+        "location": "Denver, CO",
+        "venue": "Bluebird Theater",
+        "specialGuest": "with special guest Rachel Chinouriri",
+        "tickets": {
+            "label": "Tickets",
+            "href": "https://www.ticketmaster.com/"
+        },
+        "status": "upcoming"
+    },
+    {
+        "id": 8,
+        "date": "January 16, 2027",
+        "location": "Chicago, IL",
+        "venue": "House of Blues",
+        "specialGuest": "with special guest Rachel Chinouriri",
+        "tickets": {
+            "label": "Tickets",
+            "href": "https://www.ticketmaster.com/"
+        },
+        "status": "upcoming"
+    },
+    {
+        "id": 9,
+        "date": "February 6, 2027",
+        "location": "Nashville, TN",
+        "venue": "The Basement East",
+        "specialGuest": "with special guest Rachel Chinouriri",
+        "tickets": {
+            "label": "Tickets",
+            "href": "https://www.ticketmaster.com/"
+        },
+        "status": "upcoming"
+    },
+    {
+        "id": 10,
+        "date": "March 12, 2027",
+        "location": "Brooklyn, NY",
+        "venue": "Brooklyn Steel",
+        "specialGuest": "with special guest Rachel Chinouriri",
+        "tickets": {
+            "label": "Tickets",
+            "href": "https://www.ticketmaster.com/"
+        },
+        "status": "upcoming"
+    }
+
+]

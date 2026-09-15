@@ -1,0 +1,181 @@
+/* Tour banner */
+.tourContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--color-band-bg);   
+}
+
+.tourHeader {
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+}
+
+.bandName {
+  font-family: var(--font-mono);
+  border-bottom: 2px solid var(--color-band-olive);
+  padding-bottom: 5px;
+}
+
+.tourTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color-band-ink);
+  font-family: var(--font-display);
+}
+
+/* current tour entries */
+.currentColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+.currentTourImageWrap {
+  width: 700px;
+  margin-top: 0;
+  margin-left: 20px
+}
+
+.tourImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.currentTourList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-height: 800px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.tourEntry {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.3fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0.3rem 0.1rem 1rem;
+}
+
+.tourEntry:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.tourDateLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.tourDateCell,
+.tourLocationCell,
+.tourVenueCell,
+.tourGuestCell {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.tourTickets {
+  justify-self: end;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--color-band-ink);
+  text-decoration: none;
+  color: var(--color-band-ink);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tourTickets:hover {
+  background-color: var(--color-band-ink);
+  color: var(--color-band-cream);
+}
+
+/* smaller screens */
+/* dates appear below img */
+@media (width <= 768px) {
+  .tourContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .currentColumns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .currentTourImageWrap {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Past tour dates */
+.pastTourHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  padding: 10px 0;
+   text-align: center;
+  border: 2px solid var(--color-band-ink);
+
+}
+.pastTourTitle {
+ font-family: var(--font-mono);
+ margin-top: 20px;
+ font-size: 2rem;
+ /* text-decoration: underline; */
+  text-align: center;
+
+}
+.pastTour {
+ padding: 15px 20px;
+ max-width: 1200px;
+}
+
+.tourDate {
+
+}
+
+.tourLocation {
+
+}
+
+.tourVenue {
+
+}
+
+.tourDescription {
+  /* border-bottom: 3px solid var(--color-band-olive); */
+  padding: 15px 10px 0px 10px;
+
+}
+
+
+/* Tour Gallery */
+.tourGalleryImage {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease; 
+}
+
+/* triggered when the img is clicked */
+.tourGalleryImage.enlarged {
+  transform: scale(2);
+  cursor: zoom-out;
+  z-index: 999;       
+  position: relative;  
+}

@@ -1,0 +1,88 @@
+
+.newsTitle {
+  font-size: 4rem;
+  color: var(--color-band-ink);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-style: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: -20px;
+}
+
+.newsContainer {
+  max-width: 1020px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--color-band-cream);
+  border-radius: 8px;
+}
+
+.newsContent {
+  background-color: var(--color-band-olive);
+  padding: 30px;
+  border-radius: 8px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.newsPost {
+  color: #ccc;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.postLogo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: var(--color-band-ink);
+  border-radius: 20px;
+}
+
+.guitarIcon {
+  font-size: 2rem;
+  color: var(--color-band-cream);
+}
+
+.postTitle {
+  flex: 1;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: #111827;
+}
+
+.cardSummary {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.meta {
+  margin-top: auto;
+  font-size: 0.82rem;
+  color: #6b7280;
+}

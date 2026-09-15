@@ -1,0 +1,88 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 1rem 3rem;
+  background: #f7f4ee;
+  color: #1f2937;
+}
+
+.header {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #111827;
+}
+
+.subtitle {
+  margin: 0.75rem 0 0;
+  max-width: 60ch;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+}
+
+.category {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: #e7dcc7;
+  color: #5a3d1d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: #111827;
+}
+
+.cardSummary {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.meta {
+  margin-top: auto;
+  font-size: 0.82rem;
+  color: #6b7280;
+}

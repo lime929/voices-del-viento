@@ -1,0 +1,16 @@
+/* Tour Gallery */
+/* Default thumbnail styling */
+.tourGalleryImage {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease; /* Smooth enlargement effect */
+}
+
+/* Styling applied when the image is clicked */
+.tourGalleryImage.enlarged {
+  transform: scale(2); /* Doubles the size. Adjust the scale ratio as needed */
+  cursor: zoom-out;
+  z-index: 999;        /* Layers it above other elements */
+  position: relative;  /* Ensures z-index takes effect */
+}

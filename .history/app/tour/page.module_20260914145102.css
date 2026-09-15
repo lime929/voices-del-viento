@@ -1,0 +1,109 @@
+/* Tour banner */
+.tourContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--color-band-bg);   
+}
+.tourHeader {
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+}
+
+.bandName {
+  font-family: var(--font-mono);
+  border-bottom: 2px solid var(--color-band-olive);
+
+}
+
+.tourTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color-band-ink);
+  font-family: var(--font-display);
+}
+
+/* current tour */
+.currentColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+.currentTourImageWrap {
+  width: 700px;
+  margin-top: 0;
+  margin-left: 16px
+}
+
+.tourImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.currentTourList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-height: 800px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.tourEntry {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1fr 1.3fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.tourDateCell,
+.tourLocationCell,
+.tourVenueCell,
+.tourGuestCell {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tourTickets {
+  justify-self: end;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tourTickets:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Tour Gallery */
+/* Default thumbnail styling */
+.tourGalleryImage {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease; /* Smooth enlargement effect */
+}
+
+/* Styling applied when the image is clicked */
+.tourGalleryImage.enlarged {
+  transform: scale(2); /* Doubles the size. Adjust the scale ratio as needed */
+  cursor: zoom-out;
+  z-index: 999;        /* Layers it above other elements */
+  position: relative;  /* Ensures z-index takes effect */
+}

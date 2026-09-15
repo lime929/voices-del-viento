@@ -1,0 +1,48 @@
+/* Tour banner */
+.tourContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--color-band-bg); 
+}
+.tourHeader {
+    
+
+}
+
+.bandName {
+
+}
+.tourTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--color-band-ink);
+}
+
+.tourColumns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.currentTourList {
+    overflow: scroll;
+    max-width: 400px;
+}
+
+/* Tour Gallery */
+/* Default thumbnail styling */
+.tourGalleryImage {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease; /* Smooth enlargement effect */
+}
+
+/* Styling applied when the image is clicked */
+.tourGalleryImage.enlarged {
+  transform: scale(2); /* Doubles the size. Adjust the scale ratio as needed */
+  cursor: zoom-out;
+  z-index: 999;        /* Layers it above other elements */
+  position: relative;  /* Ensures z-index takes effect */
+}
