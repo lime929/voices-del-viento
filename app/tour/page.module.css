@@ -130,46 +130,94 @@
   padding: 10px 0;
    text-align: center;
   border: 2px solid var(--color-band-ink);
-
+  font-family: var(--font-mono);
 }
 .pastTourTitle {
  font-family: var(--font-mono);
  margin-top: 20px;
  font-size: 2rem;
   text-align: center;
-
+  margin-bottom: 10px;
 }
 .pastTour {
- padding: 15px 20px;
- max-width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-/* .tourDate, .tourLocation, .tourVenue p {
- font-family: var(--font-mono);
-}
-.tourHeader p {
- font-family: var(--font-mono);
-} */
-
 .tourDescription {
-  /* border-bottom: 3px solid var(--color-band-olive); */
-  padding: 15px 10px 0px 10px;
-
+  padding: 15px 10px 15px 10px;
 }
 
 
 /* Tour Gallery */
+.tourGallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 2rem;
+}
+
+.tourSpotlight {
+  width: min(1100px, calc(100% - 2rem));
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+}
+
+.tourSpotlightImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tourGalleryGrid {
+  width: min(1200px, calc(100% - 2rem));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.tourGalleryThumbButton {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.tourGalleryThumbButton:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.45);
+}
+
 .tourGalleryImage {
   width: 100%;
   height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
   cursor: zoom-in;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
+  border: 2px solid var(--color-band-olive);
+  margin: 0;
 }
 
 /* triggered when the img is clicked */
 .tourGalleryImage.enlarged {
   transform: scale(2);
   cursor: zoom-out;
-  z-index: 999;       
-  position: relative;  
+  z-index: 999;
+  position: relative;
+}
+
+.tourGalleryImage:hover {
+  transform: scale(1.03);
 }
