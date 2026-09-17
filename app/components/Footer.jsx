@@ -10,7 +10,7 @@ export default function Footer() {
               <span className="font-black text-band-cream">Voices Del Viento</span>
             </p>
             <p className="mt-1 font-mono text-xs tracking-wider text-band-gold">
-              Made with Next.js & Tailwind by Liliana Mendez
+              Made with Next.js, React & Tailwind by Liliana Mendez
             </p>
           </div>
 

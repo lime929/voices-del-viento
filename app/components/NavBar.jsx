@@ -97,21 +97,21 @@ export default function NavBar() {
 
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:ml-6 md:pr-0">
               <div className="flex items-center gap-2 text-band-cream">
-             <button className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
+             <a href="https://www.facebook.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
                     <FaFacebook className="h-6 w-6" />
-                </button>
-             <button className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
-                    <FaInstagram className="h-6 w-6" />
-                </button>
-             <button className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
+                </a>
+             <a href="https://www.instagram.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
+                    <FaInstagram className="h-6 w-6"/>
+                </a>
+             <a href="https://www.youtube.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
                     <FaYoutube className="h-6 w-6" />
-                </button>
-             <button className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
+                </a>
+             <a href="https://www.x.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
                     <FaTwitter className="h-6 w-6" />
-                </button>
-            <button className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
+                </a>
+            <a href="https://www.spotify.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
                     <FaSpotify className="h-6 w-6" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
