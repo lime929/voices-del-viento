@@ -1,0 +1,10 @@
+[
+    {
+    "_id": "item-1",
+    "name": "",
+    "format": ["CD", "Vinyl", "Digital", "Cassette"],
+    "description": "",
+    "price": ,
+    "images": ["/images/store/music/item-1.jpg"],
+    },
+]

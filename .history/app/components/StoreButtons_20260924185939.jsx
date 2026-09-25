@@ -1,0 +1,30 @@
+
+"use client";  
+import { useRouter } from "next/navigation";
+import ClothingCard from "../components/ClothingCard";
+import clothingArray from "./clothing.json";
+import SearchBar from "../components/SearchBar";
+
+export default function CatalogPage() {
+    const router = useRouter();
+    return (
+
+<button
+            onClick={() => router.replace('/store')}
+            className="rounded-lg border border-zinc-700 bg-zinc-800 px-6 py-3 font-semibold text-white hover:bg-zinc-700"
+          >
+            Store Home
+          </button>
+     <button
+            onClick={() => router.replace('/store/apparel')}
+            className="rounded-lg border border-zinc-700 bg-zinc-800 px-6 py-3 font-semibold text-white hover:bg-zinc-700"
+          >
+            Apparel
+          </button>
+      <button
+            onClick={() => router.replace('/store/music')}
+            className="rounded-lg border border-zinc-700 bg-zinc-800 px-6 py-3 font-semibold text-white hover:bg-zinc-700"
+          >
+            Music
+          </button>
+          )}

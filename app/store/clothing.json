@@ -7,10 +7,10 @@
     "fabric": "Cotton",
     "rating": 4.6,
     "price": 28,
-    "images": ["/images/store/item-1.jpg"],
+    "images": ["/images/store/apparel/item-1.jpg"],
     "keywords": ["black", "graphic", "geometric", "streetwear", "short sleeve"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Black"]
+    "colors": ["Black", "White", "Dark Gray"]
   },
   {
     "_id": "item-2",
@@ -20,10 +20,10 @@
     "fabric": "Cotton",
     "rating": 4.5,
     "price": 26,
-    "images": ["/images/store/item-2.jpg"],
+    "images": ["/images/store/apparel/item-2.jpg"],
     "keywords": ["white", "floral", "line art", "graphic", "streetwear"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["White"]
+    "colors": ["White", "Washed Gray"]
   },
   {
     "_id": "item-3",
@@ -33,10 +33,10 @@
     "fabric": "Cotton blend",
     "rating": 4.7,
     "price": 58,
-    "images": ["/images/store/item-3.jpg"],
+    "images": ["/images/store/apparel/item-3.jpg"],
     "keywords": ["charcoal", "washed", "oversized", "distressed", "grunge", "long sleeve"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Charcoal Gray"]
+    "colors": ["Charcoal Gray", "Navy", "Black"]
   },
   {
     "_id": "item-4",
@@ -46,10 +46,10 @@
     "fabric": "Polyester blend",
     "rating": 4.4,
     "price": 74,
-    "images": ["/images/store/item-4.jpg"],
+    "images": ["/images/store/apparel/item-4.jpg"],
     "keywords": ["black", "racing", "patchwork", "zip jacket", "moto", "streetwear"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Black", "Gray", "Tan"]
+    "colors": ["Multicolor"]
   },
   {
     "_id": "item-5",
@@ -59,10 +59,10 @@
     "fabric": "Cotton",
     "rating": 4.8,
     "price": 30,
-    "images": ["/images/store/item-5.jpg"],
+    "images": ["/images/store/apparel/item-5.jpg"],
     "keywords": ["black", "band tee", "Death Cab for Cutie", "music", "graphic", "unisex"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Black"]
+    "colors": ["Black", "White", "Light Blue"]
   },
   {
     "_id": "item-6",
@@ -72,10 +72,10 @@
     "fabric": "Cotton",
     "rating": 4.5,
     "price": 29,
-    "images": ["/images/store/item-6.jpg"],
+    "images": ["/images/store/apparel/item-6.jpg"],
     "keywords": ["black", "Jedi Mind Tricks", "hip-hop", "graphic", "streetwear"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Black"]
+    "colors": ["Black", "Navy"]
   },
   {
     "_id": "item-7",
@@ -85,7 +85,7 @@
     "fabric": "Cotton blend",
     "rating": 4.6,
     "price": 32,
-    "images": ["/images/store/item-7.jpg"],
+    "images": ["/images/store/apparel/item-7.jpg"],
     "keywords": ["black", "Muse", "band tee", "fitted", "graphic", "music"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["Black"]
@@ -98,10 +98,10 @@
     "fabric": "Denim cotton",
     "rating": 4.7,
     "price": 62,
-    "images": ["/images/store/item-8.jpg"],
+    "images": ["/images/store/apparel/item-8.jpg"],
     "keywords": ["black", "denim", "vest", "patches", "punk", "biker", "sleeveless"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Black"]
+    "colors": ["Black", "Denim"]
   },
   {
     "_id": "item-9",
@@ -111,11 +111,11 @@
     "fabric": "Cotton",
     "rating": 4.6,
     "price": 38,
-    "images": ["/images/store/item-9.jpg"],
+    "images": ["/images/store/apparel/item-9.jpg"],
     "imagePosition": "center",
     "keywords": ["black", "Metallica", "band tee", "long sleeve", "music", "graphic"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Black"]
+    "colors": ["Black", "Burgandy"]
   },
   {
     "_id": "item-10",
@@ -125,7 +125,7 @@
     "fabric": "Cotton",
     "rating": 4.8,
     "price": 34,
-    "images": ["/images/store/item-10.jpg"],
+    "images": ["/images/store/apparel/item-10.jpg"],
     "imagePosition": "center",
     "keywords": ["gray", "AC/DC", "band tee", "oversized", "skate", "graphic"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
@@ -139,7 +139,7 @@
     "fabric": "Cotton blend fleece",
     "rating": 4.7,
     "price": 64,
-    "images": ["/images/store/item-11.jpg"],
+    "images": ["/images/store/apparel/item-12.jpg"],
     "imagePosition": "back",
     "keywords": ["gray", "hoodie", "skull", "back print", "streetwear", "graphic"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
@@ -153,7 +153,7 @@
     "fabric": "Cotton",
     "rating": 4.5,
     "price": 27,
-    "images": ["/images/store/item-12.jpg"],
+    "images": ["/images/store/apparel/item-13.jpg"],
     "imagePosition": "back",
     "keywords": ["black", "orange", "rose", "text print", "back print", "graphic"],
     "sizes": ["S", "M", "L", "XL"],
@@ -167,7 +167,7 @@
     "fabric": "Cotton blend",
     "rating": 4.6,
     "price": 78,
-    "images": ["/images/store/item-13.jpg"],
+    "images": ["/images/store/apparel/item-11.jpg"],
     "imagePosition": "center",
     "keywords": ["gray", "hooded", "zip-up", "washed", "streetwear", "jacket"],
     "sizes": ["S", "M", "L", "XL"],
@@ -181,11 +181,11 @@
     "fabric": "Cotton",
     "rating": 4.9,
     "price": 28,
-    "images": ["/images/store/item-14.jpg"],
+    "images": ["/images/store/apparel/item-14.jpg"],
     "imagePosition": "center",
     "keywords": ["white", "Thrasher", "flame logo", "skate", "graphic", "short sleeve"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["White", "Yellow", "Red"]
+    "colors": ["White", "Washed Gray", "Black"]
   },
   {
     "_id": "item-15",
@@ -195,10 +195,10 @@
     "fabric": "Cotton blend",
     "rating": 4.6,
     "price": 25,
-    "images": ["/images/store/item-15.jpg"],
+    "images": ["/images/store/apparel/item-15.jpg"],
     "imagePosition": "center",
     "keywords": ["light blue", "baby tee", "fitted", "script", "Y2K", "graphic"],
     "sizes": ["XS", "S", "M", "L", "XL"],
-    "colors": ["Light Blue", "Red"]
+    "colors": ["Light Blue", "White"]
   }
 ]

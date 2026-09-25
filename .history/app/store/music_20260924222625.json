@@ -1,0 +1,73 @@
+[
+  {
+    "_id": "item-1",
+    "name": "Luz de Medianoche",
+    "format": "Cassette EP",
+    "description": "Luz de Medianoche is a Cassette EP from Voces del Viento. It is the band's first single release, pressed for listeners who want a small-format analog record. The A-side blends shimmering indie-rock guitars with Spanish lyrics and a driving rhythm. Its songs create a late-night, romantic vibe that feels restless, intimate, and full of city lights.",
+    "price": 8.99,
+    "images": ["/images/store/music/item-1.jpg"]
+  },
+  {
+    "_id": "item-2",
+    "name": "Raíces",
+    "format": "CD",
+    "description": "Raíces is a CD release from Voces del Viento. It is the band's debut full-length album, bringing together twelve songs in one complete collection. The record pairs Spanish-language indie rock with warm guitar tones, steady drums, and melodic vocals. Its songs carry a nostalgic but hopeful feeling, reflecting on home, memory, and finding your way forward.",
+    "price": 12.99,
+    "images": ["/images/store/music/item-2.jpg"]
+  },
+  {
+    "_id": "item-3",
+    "name": "Malagueña Salerosa",
+    "format": "12-inch Vinyl LP",
+    "description": "Malagueña Salerosa is a 12-inch vinyl LP by Voces del Viento. It is the band's second full-length album, designed as a side-by-side journey through its songs. The larger vinyl format gives the layered guitars, bass, and drums a spacious indie-rock presence. The music feels reflective and adventurous, following themes of distance, movement, and the people left behind.",
+    "price": 22.99,
+    "images": ["/images/store/music/item-3.jpg"]
+  },
+  {
+    "_id": "item-4",
+    "name": "Bajo el Sol",
+    "format": "CD",
+    "description": "Bajo el Sol is a CD from Voces del Viento. It is the band's third full-length album and expands their Spanish indie-rock sound into brighter territory. The record balances crisp rhythms, energetic guitar hooks, and lyrics that invite listeners to sing along. Its songs have a sunlit, open-road vibe centered on freedom, friendship, and starting again.",
+    "price": 24.99,
+    "images": ["/images/store/music/item-4.jpg"]
+  },
+  {
+    "_id": "item-5",
+    "name": "Noche Eterna",
+    "format": "12-inch Vinyl LP",
+    "description": "Noche Eterna is a 12-inch vinyl LP by Voces del Viento. It is the band's fourth full-length album, presented as a darker and more atmospheric chapter in their catalog. Deep bass lines, ringing guitars, and emotionally direct Spanish vocals give the songs a cinematic indie-rock edge. The album moves through loneliness, longing, and resilience with a moody after-hours feeling.",
+    "price": 24.99,
+    "images": ["/images/store/music/item-5.jpg"]
+  },
+  {
+    "_id": "item-6",
+    "name": "Mensajes Perdidos",
+    "format": "Cassette EP",
+    "description": "Mensajes Perdidos is a cassette EP from Voces del Viento. It is the band's second short-form release, capturing six songs on a nostalgic tape format. The cassette's lo-fi character complements the raw guitars, understated percussion, and close Spanish-language vocals. These songs feel personal and bittersweet, like unsent messages about missed chances, change, and holding on to hope.",
+    "price": 9.99,
+    "images": ["/images/store/music/item-6.jpg"]
+  },
+  {
+    "_id": "item-7",
+    "name": "Cenizas y Mar",
+    "format": "7-inch Vinyl Single",
+    "description": "Cenizas y Mar is a 7-inch vinyl single from Voces del Viento. It is the band's second single release, with one featured song on each side of the record. The analog vinyl format highlights sharp guitar lines, rhythmic drums, and Spanish vocals that build toward an anthemic chorus. Its songs feel urgent and windswept, balancing heartbreak with the determination to begin again.",
+    "price": 8.99,
+    "images": ["/images/store/music/item-7.jpg"]  },
+  {
+    "_id": "item-8",
+    "name": "Nuestros sueños: Tomas Alternas",
+    "format": "Special Edition Cassette",
+    "description": "Nuestros sueños: Tomas Alternas is a special-edition cassette from Voces del Viento. It is an alternate-takes companion release to the band's fifth full-length album, featuring different recordings and early versions of its songs. The analog tape format preserves the intimate room sound, rough guitar textures, and unpolished Spanish vocals from the sessions. These versions feel vulnerable and reflective, revealing the uncertainty, warmth, and creative energy behind the finished record.",
+    "price": 11.99,
+    "images": ["/images/store/music/item-8.jpg"]
+  },
+  {
+    "_id": "item-9",
+    "name": "Luna Roja: En Vivo",
+    "format": "Live Concert CD",
+    "description": "Luna Roja: En Vivo is a live concert CD from Voces del Viento. It is the band's first live release, capturing a full Spanish indie-rock set performed before an audience. The CD preserves the louder guitars, spontaneous crowd energy, and raw vocal moments that make the concert feel immediate. Its songs have an electric and emotional vibe, moving from intimate confessions to cathartic sing-along finales.",
+    "price": 14.99,
+    "images": ["/images/store/music/item-9.jpg"]
+  }
+]

@@ -3,8 +3,10 @@ import Link from "next/link";
 
 export default function ClothingCard({ item }) {
   return (
-    <article className="group bg-var(--color-)">
-      <div className="">
+            <Link href={`/store/apparel/${item._id}`}>
+
+<article className="group flex h-full flex-col bg-(--color-band-bg) overflow-hidden">
+      <div className="relative w-full aspect-[4/4]">
         {/* Item image */}
         <Image
           src={item.images?.[0]}
@@ -12,24 +14,19 @@ export default function ClothingCard({ item }) {
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           style={{ objectPosition: item.imagePosition ?? "50%" }}
-          className=""
+          className="object-cover"
         />
       </div>
 
       {/* Item information */}
-      <div className="">
-        <h3 className="">{item.name}</h3>
+      <div className="flex flex-1 flex-col pt-3 px-3 pb-4 text-center">
+        <h3 className="font-bold text-(--color-band-ink) text-base line-clamp-2 mb-1">{item.name}</h3>
 
-        <p className="">
-          ${item.price} • {item.sizes ? item.sizes.join(", ") : "One Size"}
+        <p className="text-sm text-(--color-band-olive) mb-3">
+          ${item.price}
         </p>
-
-        <p className="">{item.description}</p>
-
-        <Link href={`/store/${item._id}`} className="">
-          View Details
-        </Link>
       </div>
     </article>
+            </Link>
   );
 }
