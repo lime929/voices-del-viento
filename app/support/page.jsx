@@ -1,6 +1,23 @@
 import styles from "./page.module.css";
 import { GiMusicSpell } from "react-icons/gi";
 
+export const metadata = {
+  title: "Voces del Viento | Support",
+  description:
+    "Find Voces del Viento customer support information, including shipping, returns, refunds, international orders, tour merchandise, and sustainability details.",
+  keywords: [
+    "Voces del Viento",
+    "Voces del Viento support",
+    "customer support",
+    "shipping policy",
+    "return policy",
+    "refund policy",
+    "international shipping",
+    "tour merchandise",
+    "pre-order policy",
+    "sustainable merchandise",
+  ],
+};
 
 export default function SupportPage() {
   return (

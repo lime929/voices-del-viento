@@ -1,0 +1,56 @@
+
+.aboutContainer {
+  display: flex;
+  /*  changes the main axis from the default horizontal to vertical so all items in .containerE are vertically stacked */
+  flex-direction: column;
+}
+
+.bandname p {
+  font-size: 1em;
+  color: #353528;
+  letter-spacing: 2px;
+  margin: 0px 80px;
+  font-family: "Scope One", serif;
+  font-weight: bold;
+  /* positions text lower */
+  transform: translateY(40%);
+}
+.bandname h3 {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--second);
+  margin: 0 60px;
+  font-family: "Audiowide", sans-serif;
+  font-style: normal;
+  /* positions text lower */
+  transform: translateY(30%);
+}
+.aboutDesc p,
+.aboutDesc2 p {
+  /* larger space inbetween lines */
+  line-height: 1.6;
+  color: #333;
+  margin: 10px;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  max-width: 600px;
+  text-align: justify;
+}
+.images {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.aboutDesc,
+.aboutDesc2 {
+  display: flex;
+  /* centers paragraphs and imgs onto the center of the window */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  /* makes it so items will stack */
+  flex-wrap: wrap;
+}

@@ -3,6 +3,24 @@ import clothingArray from "./clothing.json";
 import SearchBar from "../components/SearchBar";
 import StoreButtons from "../components/StoreLinks";
 
+export const metadata = {
+  title: "Voces del Viento | Official Store",
+  description:
+    "Shop official Voces del Viento merchandise, including band apparel, music, exclusive releases, and fan favorites.",
+  keywords: [
+    "Voces del Viento",
+    "Voces del Viento store",
+    "official band merch",
+    "band merchandise",
+    "Mexican rock merch",
+    "indie band clothing",
+    "band apparel",
+    "Voces del Viento shirts",
+    "Voces del Viento music",
+    "exclusive band merch",
+  ],
+};
+
 export default function CatalogPage() {
   return (
     <main className="min-h-screen pb-10">

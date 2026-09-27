@@ -22,14 +22,15 @@ export const metadata = {
 export default function NewsPage() {
   return (
     <>
+    <div className={styles.imgContainer}>
       <Image
         src={banner}
-        alt="Band with Mariachi outfits performing on stage"
+        alt="couple with dia de los muertos makeup"
         sizes="100vw"
         className={styles.bannerImage}
         priority
       />
-
+</div>
       <div className={styles.newsContainer}>
         <h2 className={styles.newsTitle}>Music News</h2>
 

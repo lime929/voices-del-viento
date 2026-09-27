@@ -1,0 +1,155 @@
+.aboutContainer {
+  padding: 3rem clamp(1.25rem, 5vw, 5rem) 2.5rem;
+  background-color: var(--color-band-cream);
+  color: var(--color-band-ink);
+  zoom: 90%;
+}
+
+
+.aboutSection {
+  width: min(100%, 92rem);
+  margin: 0 auto;
+}
+
+.bandName {
+  margin-bottom: 1.75rem;
+}
+
+.bandName p {
+  margin: 0 0 0.5rem;
+  color: var(--color-band-olive);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.bandName h2 {
+  margin: 0;
+  color: var(--color-band-ink);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.75rem);
+  line-height: 1;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.aboutGrid p {
+  margin: 0;
+  color: var(--color-band-ink);
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  line-height: 1.65;
+  text-align: left;
+}
+
+.storyOne {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.storyTwo {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.imageOne {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.imageTwo {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.storyThree {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.storyFour {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.storyFive {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: center;
+}
+
+.imageThree {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.imageFour {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.imageOne,
+.imageTwo,
+.imageThree,
+.imageFour {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 25%);
+}
+
+.aboutImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Tablet: two columns, normal source order. */
+@media (max-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .storyOne,
+  .storyTwo,
+  .imageOne,
+  .imageTwo,
+  .storyThree,
+  .storyFour,
+  .storyFive,
+  .imageThree {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .storyFive {
+    align-self: auto;
+  }
+}
+
+/* Phone: one column, one item after another. */
+@media (max-width: 600px) {
+  .aboutContainer {
+    padding-top: 2rem;
+  }
+
+  .pageTitle {
+    margin-bottom: 2rem;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .aboutGrid p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+}
