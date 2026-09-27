@@ -1,0 +1,240 @@
+import banner from "../../public/images/support/banner.jpg";
+import Image from "next/image";
+
+export default function SupportPage() {
+    return (
+        <>
+         <Image
+        src={banner}
+        alt=""
+        sizes="100vw"
+        className={styles.bannerImage}
+        priority
+      />
+       <div className="">
+  <h2>For the Fans</h2>
+
+  <div className="">
+    <p className="">
+      We want to make sure every piece of merch feels as good as it looks.
+      Quality is everything to us—whether it's a soft, long-lasting band
+      tee or a hoodie you'll want to live in, we've handpicked every
+      fabric and design in order to give you something that's worth wearing
+      all the time. When you put on one of our shirts, we want it to feel like
+      you're bringing a piece of the music with you, something that truly
+      reflects the spirit of our music. This clothing is a way for you to show
+      who you are to the world and reflect your interests to others through
+      fashion.
+    </p>
+
+    <p className="">
+      Each design is carefully crafted with you in mind, blending unique artwork
+      inspired by our songs, our journey, and, most importantly, our fans. From
+      bold graphics to subtler, limited-edition pieces, we've made sure
+      there's something for everyone. And because we want our merch to be
+      accessible, we've kept our prices fair without compromising on
+      quality. This is more than just merch—it's our way of giving back to
+      you, the fans who make it all possible.
+    </p>
+  </div>
+
+  <h2>Refund &amp; Shipping Policy</h2>
+
+  <div className="">
+    <h4>How long will it take to get a refund for my returned item?</h4>
+    <p>
+      Allow 3–5 business days for your return to be processed. Refunds
+      typically take 2–3 business days to appear in your account once
+      they've been processed, but sometimes can take up to 5 business days.
+    </p>
+
+    <h4>Do you accept returns of products regardless of condition?</h4>
+    <p>
+      Items must be returned in their original condition and packaging, with
+      tags attached. Returned items cannot be washed, worn, used, or altered in
+      any way. Any items decided as used or altered in any way will not be
+      eligible for a refund or exchange.
+    </p>
+
+    <h4>Who pays for my return?</h4>
+    <p>
+      For customers with shipping addresses within the US, free return labels
+      will be provided. International customers are responsible for covering any
+      costs associated with returns or exchanges.
+    </p>
+
+    <h4>How long after my order can I submit a return request?</h4>
+    <p>
+      Return requests must be made within 30 days of the date your order is
+      delivered.
+    </p>
+
+    <h4>How do I return my order for a refund or an exchange?</h4>
+    <p>
+      Please contact us to submit a return request and a member of our customer
+      care team will reach back to validate and initiate your return.
+    </p>
+
+    <h4>When will my order ship?</h4>
+    <p>
+      Orders usually ship within 2-3 business days. Shipping and delivery dates
+      aren't guaranteed unless otherwise specified. Pre-ordered items are
+      not available to ship at the time of purchase. Shipping timelines on
+      pre-orders are detailed in the product description, as well as in your
+      confirmation email.
+    </p>
+
+    <p>
+      Please check your confirmation email for details on when pre-order items
+      will ship. Shipping and delivery dates on these items are not guaranteed
+      unless otherwise noted. While we make every effort to communicate accurate
+      delivery estimates around your orders, unanticipated production delays for
+      pre-order and limited-edition items do happen. If an item in your order
+      has been affected by a production delay, we will notify you via email as
+      soon as possible.
+    </p>
+  </div>
+</div>
+
+<div class="media-item media-item-image-overlay flex flex-col relative w-full justify-center px-none py-none">
+  <div class="grid grid-cols-1 grid-rows-1">
+    <div class="image-wrapper relative w-full overflow-hidden col-start-1 col-end-1 row-start-1 row-end-1">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <picture class="image__adaptive w-full">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+<source data-src="//store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=1200" srcset="//store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=100 100w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=300 300w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=400 400w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=500 500w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=600 600w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=800 800w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=1200 1200w" width="1200" height="1500" loading="eager" sizes="(min-width: 1024px) 100vw, (min-width: 760px) 33vw, (max-width: 759px) 100vw," media="(min-width: 760px)">
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<img src="//store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=900" srcset="//store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=100 100w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=300 300w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=400 400w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=500 500w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=600 600w, //store.billieeilish.com/cdn/shop/files/BE-000087_2026Store_CollectionImageFiller-01.png?v=1778116949&amp;width=800 800w" width="900" height="1125" loading="eager" sizes="(min-width: 1024px) 100vw, (min-width: 760px) 33vw, (max-width: 759px) 100vw," class="w-full image__responsive">
+
+
+
+
+  </picture>
+
+
+    </div>
+            
+            
+
+            <div class="block-overlay-wrapper col-start-1 col-end-1 row-start-1 row-end-1">
+              <div class="block-overlay-bg absolute inset-0 opacity-0"></div>
+              <div class="block-overlay-content relative h-full flex flex-col media-section__overlay justify-end px-none py-none gap-y-lg-xs">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="media-item media-item-seo-text [overflow-wrap:anywhere] hyphens-auto py-none px-none flex flex-col md:flex md:flex-col items-start md:items-start justify-center gap-sm-md">
+  <div class="flex flex-col items-start md:items-start text-left md:text-left justify-center left">
+
+      
+
+      
+        
+        <h2 class="c-text-primary-on text_heading_xl" ncwce="true">Making products with Intention﻿</h2>
+      
+      
+    
+
+      
+    
+
+    
+      
+        <div class="c-text-primary-on rte text_body_lg">
+          <p ncwce="true">Sustainability is built into how Billie approaches her merchandise, from apparel to vinyl. The goal is to reduce impact while maintaining quality, longevity, and design integrity.﻿</p>
+        </div>
+      
+    
+  </div>
+
+  
+</div>
+
+              </div>
+            </div>
+          
+</div>
+</div>
+  
+        </>
+    );
+}
+

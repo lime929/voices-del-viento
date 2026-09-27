@@ -1,0 +1,9 @@
+.bannerImage {
+  display: block;
+  width: 100%;
+  height: 690px;
+  object-fit: cover;
+  /* object-position: center 30%; */
+  margin: 0 auto 30px;
+  object-position: bottom;
+}

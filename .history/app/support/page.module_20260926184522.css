@@ -1,0 +1,346 @@
+.supportTitle {
+  font-size: 3.5rem;
+  color: var(--color-band-ink);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-style: bold;
+   position: absolute;
+   top: 135px;
+   left: 0;
+   width: 100%;
+   margin: 0 auto;
+   height: 50px;
+   padding-left: 6%;
+   text-transform: uppercase;
+}
+
+.bannerImage {
+  display: block;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 auto 30px;
+  object-position: bottom;
+}
+/* intro section */
+.introSection {
+  margin: 2rem;
+  color: var(--color-band-ink);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.introText p {
+   max-width: 65%;
+   margin: 0 16.5%;
+}
+.introText b {
+  font-size: 1.5rem;
+}
+
+/* mini stat graphic */
+.bandStats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  width: min(100% - 2rem, 62rem);
+  margin: 4rem auto;
+  color: var(--color-band-ink);
+}
+
+.statIcon {
+  display: grid;
+  flex: 0 0 auto;
+  width: clamp(4.75rem, 9vw, 7rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 3px solid var(--color-band-ink);
+  border-radius: 1.25rem;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+.statDivider {
+  width: 1px;
+  align-self: stretch;
+  min-height: 9rem;
+  background-color: color-mix(
+    in srgb,
+    var(--color-band-ink) 45%,
+    transparent
+  );
+}
+
+.statItem {
+  min-width: 0;
+  flex: 1;
+}
+
+.statLabel,
+.statDescription,
+.statNumber {
+  margin: 0;
+}
+
+.statLabel {
+  margin-bottom: 0.25rem;
+  color: var(--color-band-olive);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 600;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: clamp(3.25rem, 7vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+}
+
+.statDescription {
+  max-width: 11rem;
+  margin-top: 0.5rem;
+  font-size: clamp(0.9rem, 1.75vw, 1.1rem);
+  line-height: 1.25;
+}
+
+@media (max-width: 800px) {
+  .bandStats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+    align-items: start;
+  }
+
+  .statIcon {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .statDivider {
+    display: none;
+  }
+
+  .statItem:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+  }
+}
+
+/* Phone: one stat per row. */
+@media (max-width: 500px) {
+  .bandStats {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .statItem:last-child {
+    grid-column: auto;
+    width: auto;
+  }
+
+  .statDescription {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+
+/* grid section */
+.supportGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.policySection {
+  margin-top: 5rem;
+  /* padding-top: 4rem; */
+  /* border-top: 1px solid var(--color-band-olive); */
+}
+
+.policyHeading {
+  max-width: 46rem;
+  margin-bottom: 3rem;
+  margin: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-band-olive);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.policyHeading h2 {
+  margin: 0;
+  color: var(--color-band-ink);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 0.95;
+  white-space: nowrap;
+
+}
+
+.policyHeading p:last-child {
+  max-width: 36rem;
+  margin: 1.25rem 0 0;
+  color: var(--color-band-ink);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.supportGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--color-band-ink);
+  border-left: 1px solid var(--color-band-ink);
+}
+
+.gridCard {
+  display: flex;
+  min-height: 18rem;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-right: 1px solid var(--color-band-ink);
+  border-bottom: 1px solid var(--color-band-ink);
+  background-color: var(--color-band-cream);
+  color: var(--color-band-ink);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.gridCard:hover {
+  background-color: var(--color-band-olive);
+  color: var(--color-band-cream);
+}
+
+.cardNumber {
+  margin-bottom: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.gridCard h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.gridCard p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* The last, longer pre-order card spans two columns on desktop. */
+.wideCard {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .supportGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wideCard {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .policySection {
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+
+  .supportGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .gridCard {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+
+  .wideCard {
+    grid-column: span 1;
+  }
+}
+
+/* video banner */
+.videoBanner {
+  position: relative;
+  display: grid;
+  min-height: clamp(28rem, 70vh, 48rem);
+  overflow: hidden;
+  place-items: end start;
+  background-color: var(--color-band-ink);
+  color: var(--color-band-cream);
+}
+
+.bannerVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 18, 0.75) 0%,
+    rgba(20, 20, 18, 0.42) 45%,
+    rgba(20, 20, 18, 0.1) 100%
+  );
+}
+
+.videoContent {
+  position: relative;
+  z-index: 1;
+  max-width: 48rem;
+  padding: clamp(1.5rem, 5vw, 5rem);
+}
+
+.videoEyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-band-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.videoContent h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.9;
+  font-weight: 700;
+}
+
+.videoContent p:last-child {
+  max-width: 35rem;
+  margin: 1.25rem 0 0;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .videoBanner {
+    min-height: 34rem;
+  }
+
+  .videoOverlay {
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 18, 0.82) 0%,
+      rgba(20, 20, 18, 0.18) 100%
+    );
+  }
+}
+
