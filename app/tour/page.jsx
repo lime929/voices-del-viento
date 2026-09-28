@@ -59,6 +59,7 @@ export default function TourPage() {
           ))}
         </div>
       </div>
+      <div id="tour-gallery" />
       <TourGallery />
     </>
   );

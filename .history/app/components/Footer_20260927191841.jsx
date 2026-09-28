@@ -1,0 +1,69 @@
+'use client';
+
+import { usePathname } from "next/navigation";
+export default function Footer() {
+    const pathname = usePathname();
+  
+  return (
+    <footer className="border-t border-band-olive bg-band-ink py-8 px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-col items-center justify-between gap-8 text-sm md:flex-row">
+          {/* Copyright */}
+          <div className="order-2 text-center md:order-1 md:text-left">
+            <p className="font-semibold text-band-cream">
+              © {new Date().getFullYear()}{' '}
+              <span className="font-black text-band-cream">Voices Del Viento</span>
+            </p>
+            <p className="mt-1 font-mono text-xs tracking-wider text-band-gold">
+              Made with Next.js, React & Tailwind by Liliana Mendez
+            </p>
+          </div>
+
+          {/* Right links */}
+          <nav className="order-1 flex items-center gap-6 md:order-2">
+            <a
+              href="/store"
+              className={`${
+                      pathname === "/store" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
+                    } text-sm font-semibold pb-1 transition-all`}
+            >
+              Store
+            </a>
+            <a
+              href="/tour#tour-gallery"
+              className={`${
+                      pathname === "/tour" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
+                    } text-sm font-semibold pb-1 transition-all`}
+            >
+              Tour
+            </a>
+            <a
+              href="/about"
+              className={`${
+                      pathname === "/about" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
+                    } text-sm font-semibold pb-1 transition-all`}
+            >
+              About
+            </a>
+            <a
+              href="/news"
+              className={`${
+                      pathname === "/news" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
+                    } text-sm font-semibold pb-1 transition-all`}
+            >
+              News
+            </a>
+            <a
+              href="/support"
+              className={`${
+                      pathname === "/support" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
+                    } text-sm font-semibold pb-1 transition-all`}
+            >
+              Support
+            </a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  );
+}

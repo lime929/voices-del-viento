@@ -1,0 +1,129 @@
+/* BANNER */
+.videoBanner {
+  position: relative;
+  display: grid;
+  min-height: clamp(28rem, 70vh, 48rem);
+  overflow: hidden;
+  place-items: end start;
+  background-color: var(--color-band-ink);
+  color: var(--color-band-cream);
+}
+
+.bannerVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 18, 0.75) 0%,
+    rgba(20, 20, 18, 0.42) 55%,
+    rgba(20, 20, 18, 0.1) 100%
+  );
+}
+
+.videoContent {
+  position: relative;
+  z-index: 1;
+  max-width: 48rem;
+  padding: clamp(1.5rem, 5vw, 5rem);
+}
+
+.videoEyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-band-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.videoContent h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.9;
+  font-weight: 900;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.videoContent p {
+  max-width: 35rem;
+  margin: 1.25rem 0.5rem 0.5rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.bannerButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 40px;
+  margin: 2.25rem 0.44rem 0;
+  border: 1px solid var(--color-band-cream);
+  background: var(--color-band-cream);
+  color: var(--color-band-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.bannerButton:hover {
+  background: var(--color-band-ink);
+  color: var(--color-band-cream);
+  border-color: var(--color-band-cream);
+}
+
+@media (max-width: 640px) {
+  .videoBanner {
+    min-height: 34rem;
+  }
+
+  .videoOverlay {
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 18, 0.82) 0%,
+      rgba(20, 20, 18, 0.18) 100%
+    );
+  }
+}
+
+/* shop grid */
+ .shopGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 100vh;
+}
+
+.gridCard p {
+
+}
+.gridCard h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 8vw, 3.5rem);
+  line-height: 0.9;
+  font-weight: 900;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.gridCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  min-height: 100%;
+  color: var(--color-band-ink);
+  background-image: url("/images/home/merch.jpg");
+  background-size: cover;
+  background-position: center;
+}

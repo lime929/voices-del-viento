@@ -1,0 +1,313 @@
+/* BANNER */
+.videoBanner {
+  position: relative;
+  display: grid;
+  min-height: clamp(28rem, 70vh, 48rem);
+  overflow: hidden;
+  place-items: end start;
+  background-color: var(--color-band-ink);
+  color: var(--color-band-cream);
+}
+
+.bannerVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 18, 0.75) 0%,
+    rgba(20, 20, 18, 0.42) 55%,
+    rgba(20, 20, 18, 0.1) 100%
+  );
+}
+
+.videoContent {
+  position: relative;
+  z-index: 1;
+  max-width: 48rem;
+  padding: clamp(1.5rem, 5vw, 5rem);
+}
+
+.videoEyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-band-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.videoContent h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.9;
+  font-weight: 900;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.videoContent p {
+  max-width: 35rem;
+  margin: 1.25rem 0.5rem 0.5rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.bannerButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 40px;
+  margin: 2.25rem 0.44rem 0;
+  border: 1px solid var(--color-band-cream);
+  background: var(--color-band-cream);
+  color: var(--color-band-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.bannerButton:hover {
+  background: var(--color-band-ink);
+  color: var(--color-band-cream);
+  border-color: var(--color-band-cream);
+}
+
+@media (max-width: 640px) {
+  .videoBanner {
+    min-height: 34rem;
+  }
+
+  .videoOverlay {
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 18, 0.82) 0%,
+      rgba(20, 20, 18, 0.18) 100%
+    );
+  }
+}
+
+/* shop grid */
+ .shopGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 100vh;
+}
+
+.gridCard {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  min-height: 32rem;
+  min-width: 50%;
+  color: var(--color-band-ink);
+  background-image: url("/images/home/music.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.gridCard2 {
+  background-image: url("/images/home/merch-2.jpg");
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+}
+
+.gridCard p {
+  max-width: 35rem;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-band-cream);
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.gridCard h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 8vw, 3.5rem);
+  line-height: 0.9;
+  font-weight: 900;
+  /* white-space: nowrap; */
+  text-transform: uppercase;
+  color: var(--color-band-cream);
+  margin-bottom: -10px;
+}
+
+/* albums grid */
+ .albumsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 100vh;
+}
+.gridCard3 {
+    background-image: url("/images/home/album-3.jpg");
+}
+.gridCard4 {
+    background-image: url("/images/home/album-2.jpg");
+}
+.gridCard5 {
+    background-image: url("/images/home/album-1.jpg");
+}
+
+/* music videos */
+
+
+.section {
+  padding: 3.5rem 1.25rem 5rem;
+}
+
+.newsletterContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--color-band-ink);
+}
+
+.newsletterContainer h2 {
+  margin: 0 0 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  line-height: 0.9;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-band-ink);
+}
+
+.fieldGroup {
+  margin-bottom: 1rem;
+}
+
+.inlineFields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.newsletterContainer label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-band-ink);
+}
+
+.newsletterContainer input[type="text"],
+.newsletterContainer input[type="email"],
+.newsletterContainer select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 52px;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgba(30, 33, 27, 0.7);
+  background: rgba(242, 235, 216, 0.4);
+  color: var(--color-band-ink);
+  font-size: 1rem;
+  font-family: var(--font-body);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.newsletterContainer input::placeholder {
+  color: rgba(30, 33, 27, 0.6);
+}
+
+.newsletterContainer input:focus,
+.newsletterContainer select:focus {
+  outline: none;
+  border-color: var(--color-band-ink);
+  background: rgba(242, 235, 216, 0.7);
+}
+
+.helperText {
+  margin: 0.25rem 0 1.5rem;
+  font-size: 0.82rem;
+  color: rgba(30, 33, 27, 0.75);
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 0.9rem 0;
+}
+
+.checkboxRow input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.2rem;
+  accent-color: var(--color-band-ink);
+}
+
+.checkboxRow label {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+.legalText {
+  margin: 1.5rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(30, 33, 27, 0.8);
+}
+
+.newsletterContainer a {
+  color: var(--color-band-ink);
+  text-decoration: underline;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 420px);
+  min-height: 52px;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--color-band-ink);
+  background: transparent;
+  color: var(--color-band-ink);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--color-band-ink);
+  color: var(--color-band-cream);
+  transform: translateY(-1px);
+}
