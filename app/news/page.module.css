@@ -127,3 +127,11 @@
   object-position: center 30%;
   margin: 0 auto 30px;
 }
+
+@media (max-width: 640px) {
+  .bannerImage {
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}

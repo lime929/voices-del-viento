@@ -91,6 +91,12 @@
   align-self: center;
 }
 
+.storySix {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: center;
+}
+
 .imageThree {
   grid-column: 3;
   grid-row: 3;
@@ -129,12 +135,14 @@
   .imageTwo,
   .storyThree,
   .storyFour,
+  .storySix,
   .storyFive,
   .imageThree {
     grid-column: auto;
     grid-row: auto;
   }
 
+  .storySix,
   .storyFive {
     align-self: auto;
   }

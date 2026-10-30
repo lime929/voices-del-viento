@@ -103,8 +103,8 @@ export default function AboutPage() {
             roots while keeping every show alive and unique.
           </p>
 
-            <p className={styles.storySix}>
-                        As we continue to grow as a band, we're driven by our original
+            <p className={styles.storyFive}>
+            As we continue to grow as a band, we're driven by our original
             dream of sharing our music and culture with the world. Every song
             and show is a tribute to Michoacán, our families, and the culture
             that shaped us. We're grateful for the opportunity to represent
@@ -113,7 +113,7 @@ export default function AboutPage() {
             music and make up our community.
             </p>
 
-          <p className={styles.storyFive}>
+          <p className={styles.storySix}>
             Looking ahead, we want Voces del Viento to remain a place where people can
             find connection through music. Whether someone hears us for the first time at
             a small hometown show or sings along with us in another country, we hope every

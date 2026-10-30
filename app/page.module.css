@@ -153,20 +153,60 @@
   margin-bottom: -10px;
 }
 
+@media (max-width: 640px) {
+  .shopGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .shopGrid .gridCard {
+    min-width: 0;
+  }
+}
+
 /* albums grid */
- .albumsGrid {
+.albumsGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   min-height: 100vh;
 }
+
+.albumsGrid .gridCard {
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+}
+
+.albumsGrid .cardContent {
+  width: 100%;
+  min-width: 0;
+}
+
+.albumsGrid .gridCard h2 {
+  max-width: 100%;
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  line-height: 1.05;
+}
+
+@media (min-width: 1280px) {
+  .albumsGrid .gridCard h2 {
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+  }
+}
+
 .gridCard3 {
-    background-image: url("/images/home/album-3.jpg");
+  background-image: url("/images/home/album-3.jpg");
 }
 .gridCard4 {
-    background-image: url("/images/home/album-2.jpg");
+  background-image: url("/images/home/album-2.jpg");
 }
 .gridCard5 {
-    background-image: url("/images/home/album-1.jpg");
+  background-image: url("/images/home/album-1.jpg");
+}
+
+@media (max-width: 640px) {
+  .albumsGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* music videos */
@@ -192,6 +232,12 @@
   gap: 1.25rem;
   width: min(85vw, 1400px);
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .videoRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .videoCard {

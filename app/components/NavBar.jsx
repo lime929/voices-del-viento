@@ -1,173 +1,150 @@
-'use client';
-import { useState } from "react";
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaBars, FaTimes, FaFacebook, FaInstagram, FaYoutube, FaTwitter,FaSpotify } from "react-icons/fa";
-import logoIcon from '../../app/icon.png';
+import { useState } from "react";
+import {
+  FaBars,
+  FaFacebook,
+  FaInstagram,
+  FaSpotify,
+  FaTimes,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import logoIcon from "../../app/icon.png";
+
+const navigationLinks = [
+  { href: "/store", label: "Store" },
+  { href: "/tour", label: "Tour" },
+  { href: "/about", label: "About" },
+  { href: "/news", label: "News" },
+  { href: "/support", label: "Support" },
+];
+
+const socialLinks = [
+  { href: "https://www.facebook.com/", label: "Facebook", Icon: FaFacebook },
+  { href: "https://www.instagram.com/", label: "Instagram", Icon: FaInstagram },
+  { href: "https://www.youtube.com/", label: "YouTube", Icon: FaYoutube },
+  { href: "https://www.x.com/", label: "X", Icon: FaTwitter },
+  { href: "https://www.spotify.com/", label: "Spotify", Icon: FaSpotify },
+];
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   return (
-    <>
-      <nav className="bg-band-ink border-b border-band-olive sticky top-0 z-50">
-        <div className="px-4 lg:px-6">
-          <div className="relative flex h-24 items-center justify-between">
-            
-            {/* Mobile menu button: always positioned absolute left and hidden on md+ screens */}
-            <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-band-cream hover:text-band-gold hover:bg-band-olive/20 focus:outline-none focus:ring-2 focus:ring-band-gold"
-                aria-controls="mobile-menu"
-                aria-expanded={isMobileMenuOpen}
-              >
-                <span className="sr-only">Open main menu</span>
-                {isMobileMenuOpen ? (
-                  <FaTimes className="block h-6 w-6" />
-                ) : (
-                  <FaBars className="block h-6 w-6" />
-                )}
-              </button>
+    <nav className="sticky top-0 z-50 border-b border-band-olive bg-band-ink">
+      <div className="px-3 sm:px-4 lg:px-6">
+        <div className="flex h-20 items-center justify-between sm:h-24">
+          <Link
+            href="/"
+            className="flex min-w-0 items-center gap-2 transition hover:opacity-90"
+          >
+            <Image
+              src={logoIcon}
+              alt="Voices Del Viento Logo"
+              width={44}
+              height={44}
+              priority
+            />
+            <span className="whitespace-nowrap font-display text-base font-bold uppercase tracking-wide text-band-cream transition-colors hover:text-band-gold min-[360px]:text-xl sm:text-3xl xl:text-4xl">
+              Voces Del Viento
+            </span>
+          </Link>
+
+          <div className="hidden items-center gap-4 lg:flex xl:gap-6">
+            <div className="flex items-center gap-4 xl:gap-6">
+              {navigationLinks.map(({ href, label }) => {
+                const isActive = pathname === href;
+
+                return (
+                  <Link
+                    key={href}
+                    href={href}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`border-b-2 pb-1 text-base font-semibold transition-all xl:text-lg ${
+                      isActive
+                        ? "border-band-gold text-band-gold"
+                        : "border-transparent text-band-cream hover:border-band-gold hover:text-band-gold"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                );
+              })}
             </div>
 
-            <div className="flex flex-1 items-center justify-center md:justify-start">
-              <Link href="/" className="flex flex-shrink-0 items-center gap-2 hover:opacity-90 transition">
-                <Image
-                  src={logoIcon}
-                  alt="Voices Del Viento Logo"
-                  width={50}
-                  height={50}
-                  priority
-                />
-              
-                <span className="hidden font-display text-4xl font-bold uppercase tracking-wide text-band-cream transition-colors hover:text-band-gold md:block md:mr-9">
-                Voces Del Viento
-                </span>
-              </Link>
-              
-
-              <div className="hidden md:ml-6 md:block md:pt-2">
-                <div className="flex space-x-4 lg:space-x-6">
-                  <Link
-                    href="/store"
-                    className={`${
-                      pathname === "/store" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
-                    } text-lg font-semibold pb-1 transition-all`}
-                  >
-                    Store
-                  </Link>
-                  <Link
-                    href="/tour"
-                    className={`${
-                      pathname === "/tour" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
-                    } text-lg font-semibold pb-1 transition-all`}
-                  >
-                    Tour
-                  </Link>
-                  <Link
-                    href="/about"
-                    className={`${
-                      pathname === "/about" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
-                    } text-lg font-semibold pb-1 transition-all`}
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/news"
-                    className={`${
-                      pathname === "/news" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
-                    } text-lg font-semibold pb-1 transition-all`}
-                  >
-                    News
-                  </Link>
-                  <Link
-                    href="/support"
-                    className={`${
-                      pathname === "/support" ? "border-b-2 border-band-gold text-band-gold" : "border-b-2 border-transparent text-band-cream hover:text-band-gold hover:border-band-gold"
-                    } text-lg font-semibold pb-1 transition-all`}
-                  >
-                    Support
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:ml-6 md:pr-0">
-              <div className="flex items-center gap-2 text-band-cream">
-             <a href="https://www.facebook.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
-                    <FaFacebook className="h-6 w-6" />
-                </a>
-             <a href="https://www.instagram.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
-                    <FaInstagram className="h-6 w-6"/>
-                </a>
-             <a href="https://www.youtube.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
-                    <FaYoutube className="h-6 w-6" />
-                </a>
-             <a href="https://www.x.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
-                    <FaTwitter className="h-6 w-6" />
-                </a>
-            <a href="https://www.spotify.com/" target="_blank" className="relative p-2 rounded-full transition-transform duration-250 ease-in-out hover:scale-110 hover:text-band-gold">
-                    <FaSpotify className="h-6 w-6" />
-                </a>
-              </div>
-            </div>
+            <SocialLinks className="flex items-center gap-1 text-band-cream" />
           </div>
+
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="inline-flex items-center justify-center rounded-md p-2 text-band-cream transition hover:bg-band-olive/20 hover:text-band-gold focus:outline-none focus:ring-2 focus:ring-band-gold lg:hidden"
+            aria-label={isMobileMenuOpen ? "Close main menu" : "Open main menu"}
+            aria-controls="mobile-menu"
+            aria-expanded={isMobileMenuOpen}
+          >
+            {isMobileMenuOpen ? (
+              <FaTimes aria-hidden="true" className="h-6 w-6" />
+            ) : (
+              <FaBars aria-hidden="true" className="h-6 w-6" />
+            )}
+          </button>
         </div>
+      </div>
 
-        {/* Mobile menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-band-ink/95 backdrop-blur-md border-t border-band-olive px-4 pb-4 pt-2 space-y-1">
-            <Link
-              href="/store"
-              className={`${
-                pathname === "/store" ? "bg-band-olive/20 text-band-cream" : "border-b-2 border-transparent text-band-cream hover:bg-band-olive/20 hover:text-band-gold"
-              } block rounded-md px-3 py-3 text-base font-semibold transition-colors`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Store
-            </Link>
-            <Link
-              href="/tour"
-              className={`${
-                pathname === "/tour" ? "bg-band-olive/20 text-band-cream" : "border-b-2 border-transparent text-band-cream hover:bg-band-olive/20 hover:text-band-gold"
-              } block rounded-md px-3 py-3 text-base font-semibold transition-colors`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Tour
-            </Link>
-            <Link
-              href="/about"
-              className={`${
-                pathname === "/about" ? "bg-band-olive/20 text-band-cream" : "border-b-2 border-transparent text-band-cream hover:bg-band-olive/20 hover:text-band-gold"
-              } block rounded-md px-3 py-3 text-base font-semibold transition-colors`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/news"
-              className={`${
-                pathname === "/news" ? "bg-band-olive/20 text-band-cream" : "border-b-2 border-transparent text-band-cream hover:bg-band-olive/20 hover:text-band-gold"
-              } block rounded-md px-3 py-3 text-base font-semibold transition-colors`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              News
-            </Link>
-            <Link
-              href="/support"
-              className={`${
-                pathname === "/support" ? "bg-band-olive/20 text-band-cream" : "border-b-2 border-transparent text-band-cream hover:bg-band-olive/20 hover:text-band-gold"
-              } block rounded-md px-3 py-3 text-base font-semibold transition-colors`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Support
-            </Link>
-          </div>
-        )}
-      </nav>
-    </>
+      {isMobileMenuOpen && (
+        <div
+          id="mobile-menu"
+          className="border-t border-band-olive bg-band-ink/95 px-4 pb-5 pt-2 backdrop-blur-md lg:hidden"
+        >
+          <nav aria-label="Main navigation">
+            {navigationLinks.map(({ href, label }) => {
+              const isActive = pathname === href;
+
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  aria-current={isActive ? "page" : undefined}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`mb-1 block rounded-md px-3 py-3 text-base font-semibold transition-colors ${
+                    isActive
+                      ? "bg-band-olive/20 text-band-gold"
+                      : "text-band-cream hover:bg-band-olive/20 hover:text-band-gold"
+                  }`}
+                >
+                  {label}
+                </Link>
+              );
+            })}
+          </nav>
+          <SocialLinks className="mt-3 flex items-center justify-center gap-3 border-t border-band-olive pt-3 text-band-cream" />
+        </div>
+      )}
+    </nav>
+  );
+}
+
+function SocialLinks({ className }) {
+  return (
+    <div className={className}>
+      {socialLinks.map(({ href, label, Icon }) => (
+        <a
+          key={label}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={label}
+          className="rounded-full p-2 transition-transform duration-200 ease-in-out hover:scale-110 hover:text-band-gold focus:outline-none focus:ring-2 focus:ring-band-gold"
+        >
+          <Icon aria-hidden="true" className="h-5 w-5" />
+        </a>
+      ))}
+    </div>
   );
 }

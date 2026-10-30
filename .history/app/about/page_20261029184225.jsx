@@ -3,28 +3,50 @@ import styles from "./page.module.css";
 import Band1 from "../../public/images/about/band-1.jpg";
 import Band2 from "../../public/images/about/band-2.jpg";
 import Band3 from "../../public/images/about/band-3.jpg";
+import banner from "../../public/images/about/banner.jpg";
+
+export const metadata = {
+  title: "Voces del Viento | About Us",
+  description:
+    "Learn about Voces del Viento, a Mexican indie rock band inspired by the culture, traditions, and music of Michoacán, Mexico.",
+  keywords: [
+    "Voces del Viento",
+    "about Voces del Viento",
+    "Mexican indie rock band",
+    "Michoacán music",
+    "Latin rock",
+    "Mexican rock",
+    "indie music",
+    "band story",
+  ],
+};
 
 export default function AboutPage() {
   return (
     <main className={styles.aboutContainer}>
-      <h1 className={styles.pageTitle}>About Us</h1>
-
+         <Image
+        src={banner}
+        alt="Band with Mariachi outfits performing on stage"
+        sizes="100vw"
+        className={styles.bannerImage}
+        priority
+      />
       <section className={styles.aboutSection}>
         <div className={styles.bandName}>
           <p>[ ARTIST COLLECTION ]</p>
-          <h2>Voces del Viento</h2>
+          <h2>Voces del Viento: Our Story</h2>
         </div>
 
         <div className={styles.aboutGrid}>
           <p className={styles.storyOne}>
             The story of our band begins in Michoacán, Mexico, where our vibrant
             culture, rich traditions, and close community inspired the band
-            we&apos;ve become today. As a group of friends who grew up together,
+            we've become today. As a group of friends who grew up together,
             we bonded over our shared love for the music that shaped
             us: everything from classic Mexican rock to the more modern lyrics
             of Caifanes and Los Enanitos Verdes. We played together in garages,
             living rooms, and family parties, developing a sound that took parts
-            of our heritage and modern indie rock influences. It wasn&apos;t
+            of our heritage and modern indie rock influences. It wasn't
             until our early 20s that we decided to take things seriously,
             putting all those years of playing into creating our own music that
             would impact new generations in Mexico and beyond.
@@ -62,7 +84,7 @@ export default function AboutPage() {
             As our music gained popularity, we started playing more shows beyond
             Michoacán, venturing into surrounding cities with disbelief that our
             music was reaching more people. With each performance, our following
-            grew, and soon fans were singing along in cities we&apos;d never
+            grew, and soon fans were singing along in cities we'd never
             even visited. Our breakthrough came when we opened for one of our
             heroes, Café Tacvba, a surreal experience that helped solidify our
             place in the Mexican rock scene. The support from our fans pushed us
@@ -76,22 +98,22 @@ export default function AboutPage() {
             the music our fathers made, we perform a mariachi-inspired song to
             close the night. Sometimes we add a rock twist; other times we let
             the acoustic guitar and the beauty of our culture lead the moment.
-            We&apos;ve even had friends from Michoacán join us on stage, which
-            always gets the crowd on its feet. It&apos;s our way of honoring our
+            We've even had friends from Michoacán join us on stage, which
+            always gets the crowd on its feet. It's our way of honoring our
             roots while keeping every show alive and unique.
           </p>
 
-            <p className={styles.storySix}>
-                        As we continue to grow as a band, we&apos;re driven by our original
+            <p className={styles.storyFive}>
+            As we continue to grow as a band, we're driven by our original
             dream of sharing our music and culture with the world. Every song
             and show is a tribute to Michoacán, our families, and the culture
-            that shaped us. We&apos;re grateful for the opportunity to represent
+            that shaped us. We're grateful for the opportunity to represent
             Mexican indie rock on a larger stage while staying true to our
             roots. This journey is possible because of the fans who support our
             music and make up our community.
             </p>
 
-          <p className={styles.storyFive}>
+          <p className={styles.storSix}>
             Looking ahead, we want Voces del Viento to remain a place where people can
             find connection through music. Whether someone hears us for the first time at
             a small hometown show or sings along with us in another country, we hope every

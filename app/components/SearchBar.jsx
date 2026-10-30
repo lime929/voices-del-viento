@@ -24,13 +24,6 @@ export default function SearchBar() {
           type="button"
           className="rounded-lg border bg-(--color-band-olive) border-zinc-700 px-3 py-2 text-sm text-(--color-band-cream) transition hover:border-(--color-band-gold) hover:text-white"
         >
-          Category
-        </button>
-
-        <button
-          type="button"
-          className="rounded-lg border bg-(--color-band-olive) border-zinc-700 px-3 py-2 text-sm text-(--color-band-cream) transition hover:border-(--color-band-gold) hover:text-white"
-        >
           Size
         </button>
 

@@ -5,6 +5,21 @@ import Band2 from "../../public/images/about/band-2.jpg";
 import Band3 from "../../public/images/about/band-3.jpg";
 import banner from "../../public/images/about/banner.jpg";
 
+export const metadata = {
+  title: "Voces del Viento | About Us",
+  description:
+    "Learn about Voces del Viento, a Mexican indie rock band inspired by the culture, traditions, and music of Michoacán, Mexico.",
+  keywords: [
+    "Voces del Viento",
+    "about Voces del Viento",
+    "Mexican indie rock band",
+    "Michoacán music",
+    "Latin rock",
+    "Mexican rock",
+    "indie music",
+    "band story",
+  ],
+};
 
 export default function AboutPage() {
   return (
@@ -89,7 +104,7 @@ export default function AboutPage() {
           </p>
 
             <p className={styles.storySix}>
-                        As we continue to grow as a band, we're driven by our original
+            As we continue to grow as a band, we're driven by our original
             dream of sharing our music and culture with the world. Every song
             and show is a tribute to Michoacán, our families, and the culture
             that shaped us. We're grateful for the opportunity to represent
